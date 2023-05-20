@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./*.html", "./assets/js/*.js"],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      "text-color": "#042b2c",
+      "main-color": "violet",
+    },
     extend: {
       keyframes: {
         "open-menu": {
