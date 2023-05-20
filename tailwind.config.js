@@ -6,8 +6,8 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
-      "text-color": "#042b2c",
-      "main-color": "violet",
+      "text-color": "violet",
+      "main-color": "#133143",
     },
     extend: {
       keyframes: {
