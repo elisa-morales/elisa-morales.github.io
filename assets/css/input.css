@@ -15,4 +15,9 @@
     width: 80%;
     margin: 2rem auto;
   }
+
+  a:is(:link, :active, :visited).active span {
+    border-bottom: 2px solid violet;
+    padding-bottom: 4px;
+  }
 }

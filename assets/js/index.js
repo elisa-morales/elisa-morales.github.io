@@ -13,3 +13,10 @@ const initApp = () => {
 }
 
 document.addEventListener("DOMContentLoaded", initApp)
+
+const activePage = window.location.href
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href === activePage) {
+    link.classList.add("active")
+  }
+})
