@@ -10,4 +10,9 @@
   section {
     scroll-margin-top: 5rem;
   }
+
+  .container {
+    width: 80%;
+    margin: 2rem auto;
+  }
 }
