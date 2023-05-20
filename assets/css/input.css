@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent;
   }
@@ -16,7 +20,7 @@
     margin: 2rem auto;
   }
 
-  a:is(:link, :active, :visited).active span {
+  .active span {
     border-bottom: 2px solid violet;
     padding-bottom: 4px;
   }
