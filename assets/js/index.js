@@ -1,4 +1,15 @@
-const initApp = () => {
+const hamburger = document.querySelector(".hamburger")
+const navbar = document.querySelector(".nav-bar")
+
+function toggle() {
+  navbar.classList.toggle("active")
+  hamburger.classList.toggle("active")
+}
+
+hamburger.addEventListener("click", toggle)
+navbar.addEventListener("click", toggle)
+
+/*const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-button")
   const mobileMenu = document.getElementById("mobile-menu")
 
@@ -13,16 +24,4 @@ const initApp = () => {
 }
 
 document.addEventListener("DOMContentLoaded", initApp)
-
-function activeLink() {
-  const activePage = window.location.href
-  const navLinks = document.querySelectorAll("nav a").forEach((link) => {
-    if (link.href === activePage) {
-      link.classList.add("active")
-    } else {
-      link.classList.remove("active")
-    }
-  })
-}
-
-window.addEventListener("scroll", activeLink)
+*/
