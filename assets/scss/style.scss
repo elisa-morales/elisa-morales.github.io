@@ -123,14 +123,14 @@ header {
     display: block;
     margin: 7em auto 0 auto;
     text-align: right;
-    opacity: 0;
+    visibility: hidden;
     overflow: hidden;
   }
 
   .nav-bar.active ul {
     transform-origin: top;
     animation: openMenu 0.5s ease-in-out forwards;
-    opacity: 1;
+    visibility: visible;
   }
 
   .nav-bar ul li a {
