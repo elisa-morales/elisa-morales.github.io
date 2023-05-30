@@ -54,15 +54,14 @@ header {
   margin: 0 0.313em;
 }
 
-.nav-bar ul li a:hover,
-.nav-bar ul li a.active {
+.nav-bar ul li a:hover {
   text-decoration: underline;
   text-decoration-color: $titleColor;
   -moz-text-decoration-color: $titleColor;
   text-decoration-thickness: 3px;
 }
 
-/*@media only screen and (max-width: 1320px) {
+/*.@media only screen and (max-width: 1320px) {
   header {
     padding: 0 50px;
   }
@@ -121,7 +120,7 @@ header {
 
   .nav-bar ul {
     display: block;
-    margin: 7em auto 0 auto;
+    margin: 2em auto 0 auto;
     text-align: right;
     visibility: hidden;
     overflow: hidden;
