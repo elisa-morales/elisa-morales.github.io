@@ -36,12 +36,20 @@
       </nav>
     </header>
 
-    <div id="#" class="container">Home</div>
+    <div id="#" class="container">
+      <div class="hero-content">
+        <span id="typed-el"></span>
+        <div>qui comunque devo mettere le icons</div>
+      </div>
+    </div>
 
     <div id="about" class="container">
-      <h2>About</h2>
+      <h3>About</h3>
       <div class="about-content">
-        <p>Ho sempre pensato che con un pizzico di fortuna sarei potuta nascere in Scozia, dove mi sarei presa cura della mia spettrale e <span class="italic">modesta</span> tenuta di campagna, ma mi sono dovuta accontentare. Attualmente abito a Milano, nel monolocale da cui svolgo il mio lavoro di freelance e mi dedico alla mia nuova passione: lo <span class="bold">sviluppo front end</span>.</p>
+        <p>
+          Ho sempre pensato che con un pizzico di fortuna sarei potuta nascere in Scozia, dove mi sarei presa cura della mia spettrale e <span class="italic">modesta</span> tenuta di campagna, ma mi sono dovuta accontentare. Attualmente abito a <span class="bold">Milano</span>, nel monolocale da cui svolgo il mio lavoro di freelance e mi dedico alla mia nuova passione: lo
+          <span class="bold">sviluppo front end</span>.
+        </p>
 
         <p>Seguendo il <span class="bold">master in Front End Development</span> di start2impact University e i corsi delle piattaforme online Scrimba, Fastweb Digital Academy e Learnn ho acquisito, e sto continuando a coltivare, nuove competenze digitali legate allo sviluppo web come HTML, CSS, <span class="bold">JavaScript</span> e <span class="bold">React</span>.</p>
 
@@ -55,17 +63,26 @@
     </div>
 
     <div id="skills" class="container">
-      <h2>Skills</h2>
+      <h3>Skills</h3>
     </div>
 
     <div id="portfolio" class="container">
-      <h2>Portfolio</h2>
+      <h3>Portfolio</h3>
     </div>
 
     <div id="contact" class="container">
-      <h2>Contact</h2>
+      <h3>Contact</h3>
     </div>
 
     <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed6 = new Typed("#typed-el", {
+        strings: ["<h1>ehyyy sono Elisa</h1>^1000\n `<br/><h1>ho sentito che stai cercando un* front-end developer</h1>` ^1000\n `<br/><h2>(sei nel posto giusto)</h2>"],
+        typeSpeed: 40,
+        backSpeed: 0,
+        loop: false,
+      })
+    </script>
   </body>
 </html>

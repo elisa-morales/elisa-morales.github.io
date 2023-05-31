@@ -37,13 +37,18 @@ body {
   color: $titleColor;
 }
 
-h2 {
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
   font-size: 1.5rem;
   color: $titleColor;
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  top: 0;
   @include flexCenter;
   width: 100%;
   height: 3rem;
@@ -81,10 +86,15 @@ header {
 
 .container {
   //background-color: rgb(216, 21, 21);
+  height: 100vh;
   @include flexCenter;
   flex-direction: column;
   text-align: justify;
   margin: 2em 6em;
+}
+
+.hero-content {
+  text-align: center;
 }
 
 .about-content p {
@@ -154,6 +164,7 @@ header {
   }
 
   .container {
+    height: 100dvh;
     margin: 2em;
   }
 }
