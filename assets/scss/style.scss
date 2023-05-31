@@ -23,6 +23,23 @@ html {
 
 body {
   background-color: $mainColor;
+  color: $textColor;
+  font-family: $bodyFont;
+  font-size: 0.93rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+  color: $titleColor;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: $titleColor;
 }
 
 header {
@@ -32,8 +49,8 @@ header {
   height: 3rem;
   background-color: $mainColor;
   justify-content: space-between;
-  padding: 0 6em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 0 4em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
 }
 
 .logo {
@@ -52,36 +69,27 @@ header {
 .nav-bar ul li a {
   display: block;
   color: $titleColor;
-  font-family: Poppins;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding: 0.625em 1.563em;
   transition: 0.2s;
   margin: 0 0.313em;
 }
 
 .nav-bar ul li a:hover {
-  text-decoration: underline;
-  text-decoration-color: $titleColor;
-  -moz-text-decoration-color: $titleColor;
-  text-decoration-thickness: 3px;
+  color: $textColor;
 }
 
 .container {
-  background-color: rgb(216, 21, 21);
+  //background-color: rgb(216, 21, 21);
+  @include flexCenter;
+  flex-direction: column;
+  text-align: justify;
   margin: 2em 6em;
 }
 
-/*.@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
+.about-content p {
+  padding: 10px 0;
 }
-
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}*/
 
 @media only screen and (max-width: 768px) {
   header {
@@ -123,17 +131,16 @@ header {
     background: $mainColor;
     transition: 0.5s;
   }
-
-  .nav-bar.active {
-    height: 100vh;
-  }
-
   .nav-bar ul {
     display: block;
-    margin: 2em auto 0 auto;
+    margin: 5em auto 0 auto;
     text-align: right;
     visibility: hidden;
     overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 100vh;
   }
 
   .nav-bar.active ul {
@@ -148,5 +155,11 @@ header {
 
   .container {
     margin: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-content {
+    width: 80%;
   }
 }
