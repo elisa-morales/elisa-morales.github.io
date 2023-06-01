@@ -230,6 +230,11 @@ img {
   transition: 0.3s;
 }
 
+.portfolio-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .portfolio-sub,
 .portfolio-title {
   color: #fff;
