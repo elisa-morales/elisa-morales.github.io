@@ -4,85 +4,273 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <title>Document</title>
+    <meta name="title" content="Elisa Morales | Front-end developer, Milano">
+    <meta name="keywords" content=" Front-end developer, web developer, portfolio">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Elisa Morales">
+ 
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Elisa Morales | Front-end developer, Milano</title>
   </head>
   <body>
-    <header>
-      <div class="logo">✦</div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <header class="profile container">
+      <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+      <div class="profile-content grid">
+        <div class="profile-data">
+          <div class="profile-border">
+            <div class="profile-perfil">
+              <img src="assets/img/perfil.png" alt="" />
+            </div>
+          </div>
+
+          <h2 class="profile-name">Elisa Morales</h2>
+          <h3 class="profile-profession">junior front-end developer</h3>
+
+          <ul class="profile-social">
+            <a href="mailto:morales.elisa@yahoo.it" target="_blank" class="profile-social-link">
+              <i class="bx bx-envelope"></i>
+            </a>
+            <a href="https://github.com/elisa-morales" target="_blank" class="profile-social-link">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/elisa-morales-dev/" target="_blank" class="profile-social-link">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+          </ul>
+        </div>
+        </div>
       </div>
-      <nav class="nav-bar">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <div id="#" class="container">
-      <div class="hero-content">
-        <span id="typed-el"></span>
-        <div>qui comunque devo mettere le icons</div>
+    <main class="main">
+      <section class="filters container">
+        
+        <ul class="filters-content">
+          <button class="filters-button filters-tab-active" data-target="#portfolio">Portfolio</button>
+
+          <button class="filters-button" data-target="#skills">Skills</button>
+        </ul>
+
+        <div class="filters-sections">
+          
+          <div class="portfolio-content grid filters-active" data-content id="portfolio">
+            <article class="portfolio-card">
+              <img src="assets/img/project-quizzical.png" alt="Quizzical: a React web-app trivia game" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">React app trivia game</span>
+                  <h3 class="portfolio-title">Quizzical</h3>
+                  <a href="https://art-quizzical.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="assets/img/project-spilling-the-tech.png" alt="Spilling the Tech: a news app from Hacker News API" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">News app from Hacker News API</span>
+                  <h3 class="portfolio-title">Spilling the Tech</h3>
+                  <a href="https://spilling-the-tech.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="assets/img/project-watc.png" alt="Final project for the Build a Mobile App with Firebase course" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">Messaging mobile app</span>
+                  <h3 class="portfolio-title">We are the Champions</h3>
+                  <a href="https://watc-soloproject.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="assets/img/project-palette-generator.png" alt="Color scheme generator built with The Color API" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">Built with JavaScript and The Color API</span>
+                  <h3 class="portfolio-title">Color palette generator</h3>
+                  <a href="https://palette-generator-soloproject.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="assets/img/project-counter.png" alt="JavaScript counter app" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">JavaScript counter app</span>
+                  <h3 class="portfolio-title">Coloriamo la rabbia</h3>
+                  <a href="https://rabbia-counter.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img src="assets/img/project-portfolio.png" alt="Responsive single page HTML/CSS portfolio" class="portfolio-img" />
+
+              <div class="portfolio-modal">
+                <div>
+                  <span class="portfolio-sub">Responsive single page portfolio</span>
+                  <h3 class="portfolio-title">First portfolio</h3>
+                  <a href="https://elisa-morales-dev.netlify.app/" target="_blank" class="portfolio-button button button-small">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="skills-content grid" data-content id="skills">
+            <div class="skills-area">
+              <h3 class="skills-title">Frontend development</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">HTML & CSS</h3>
+                      <span class="skills-level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">JavaScript</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">React</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Bootstrap</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Tailwind CSS</h3>
+                      <span class="skills-level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">SASS</h3>
+                      <span class="skills-level">Advanced</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-area">
+              <h3 class="skills-title">Other</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Node.js</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">SEO</h3>
+                      <span class="skills-level">Advanced</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Figma</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Wireframing</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Prototyping</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Photoshop</h3>
+                      <span class="skills-level">Advanced</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
       </div>
-    </div>
+      </section>
+    </main>
 
-    <div id="about" class="container">
-      <h3>About</h3>
-      <div class="about-content">
-        <p>
-          Ho sempre pensato che con un pizzico di fortuna sarei potuta nascere in Scozia, dove mi sarei presa cura della mia spettrale e <span class="italic">modesta</span> tenuta di campagna, ma mi sono dovuta accontentare. Attualmente abito a <span class="bold">Milano</span>, nel monolocale da cui svolgo il mio lavoro di freelance e mi dedico alla mia nuova passione: lo
-          <span class="bold">sviluppo front end</span>.
-        </p>
+    <footer class="footer container">
+      <span class="footer-copy">© 2023 | Elisa Morales</span>
+    </footer>
 
-        <p>Seguendo il <span class="bold">master in Front End Development</span> di start2impact University e i corsi delle piattaforme online Scrimba, Fastweb Digital Academy e Learnn ho acquisito, e sto continuando a coltivare, nuove competenze digitali legate allo sviluppo web come HTML, CSS, <span class="bold">JavaScript</span> e <span class="bold">React</span>.</p>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-        <p>
-          Il mio prossimo obiettivo è lavorare per un'azienda che abbia a cuore i miei stessi valori di <span class="bold">sostenibilità</span> e di <span class="bold">valorizzazione del territorio</span>, lavorando in team al fine di crescere professionalmente e continuare a migliorare come developer. Idealmente, con il mio lavoro mi piacerebbe sostenere piccole e grandi realtà orientate alla
-          divulgazione, la valorizzazione e la salvaguardia del <span class="bold">patrimonio culturale</span>.
-        </p>
-
-        <p>Le mie passioni sono la <span class="bold">storia dell'arte</span>, le regine medievali, e i maglioni più brutti che si possano trovare al mercatino dell'usato. Abbiamo qualcosa in comune o hai un'opportunità da propormi?</p>
-      </div>
-    </div>
-
-    <div id="skills" class="container">
-      <h3>Skills</h3>
-    </div>
-
-    <div id="portfolio" class="container">
-      <h3>Portfolio</h3>
-    </div>
-
-    <div id="contact" class="container">
-      <h3>Contact</h3>
-    </div>
-
-    <script src="./assets/js/index.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed6 = new Typed("#typed-el", {
-        strings: ["<h1>ehyyy sono Elisa</h1>^1000\n `<br/><h1>ho sentito che stai cercando un* front-end developer</h1>` ^1000\n `<br/><h2>(sei nel posto giusto)</h2>"],
-        typeSpeed: 40,
-        backSpeed: 0,
-        loop: false,
-      })
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
