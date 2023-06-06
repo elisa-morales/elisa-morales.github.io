@@ -308,6 +308,7 @@ img {
 }
 
 .filters-tab-active {
+  cursor: default;
   background-color: var(--first-color);
   box-shadow: 0 -8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
 }
